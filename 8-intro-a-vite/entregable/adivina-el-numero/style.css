@@ -1,0 +1,22 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#numero {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#mensaje {
+    margin-top: 10px;
+    font-weight: bold;
+}

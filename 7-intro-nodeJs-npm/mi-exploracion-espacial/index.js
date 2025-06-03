@@ -10,6 +10,5 @@ planetas.forEach(planeta => {
         text: 'Vaca del planeta', e:planeta.ojos, T:planeta.lengua
     }));
     console.log('-----------------------------------------------');
-    
-   
+
 });
