@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+
+<form action="/users" method="post" id="myForm">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <label for="email">Correo Electrónico:</label>
+            <input type="text" id="email" name="email">
+        </fieldset>
+        <fieldset>
+            <legend>Intereses</legend>
+            <label>
+                <input type="checkbox" name="intereses" value="deportes"> Deportes
+            </label>
+            <label>
+                <input type="checkbox" name="intereses" value="música"> Música
+            </label>
+            <label>
+                <input type="checkbox" name="intereses" value="arte"> Arte
+            </label>
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="./app.js"></script>
+</body>
+</html>
