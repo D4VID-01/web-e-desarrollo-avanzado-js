@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            background-color: gray;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<form action="/users" method="post" id="myForm">
+    <form action="/users" method="post" id="myForm">
         <fieldset>
             <legend>Datos personales</legend>
             <label for="name">Nombre:</label>
@@ -33,9 +31,56 @@
                 <input type="checkbox" name="intereses" value="arte"> Arte
             </label>
         </fieldset>
+
+        <fieldset>
+            <legend>Género</legend>
+            <label>
+                <input type="radio" name="genero" value="masculino"> Masculino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="femenino"> Femenino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="otro"> Otro
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Elige ciudad</legend>
+            <label for="ciudad">Ciudad:</label>
+            <select id="ciudad" name="ciudad">
+                <option value="">Selecciona...</option>
+                <option value="cdmx">Ciudad de México</option>
+                <option value="guadalajara">Guadalajara</option>
+                <option value="monterrey">Monterrey</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Ajusta la fecha</legend>
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha" name="fecha">
+            <br>
+            <label for="hora">Hora de la cita:</label>
+            <input type="time" id="hora" name="hora">
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Registro fotográfico</legend>
+
+            <label for="archivo">Sube un archivo:</label>
+
+            <input type="file" id="archivo" name="archivo">
+
+        </fieldset>
+
         <button type="submit">Enviar</button>
     </form>
 
+
+
     <script src="./app.js"></script>
 </body>
+
 </html>

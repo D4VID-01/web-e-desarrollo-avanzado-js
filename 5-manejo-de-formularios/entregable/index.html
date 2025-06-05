@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Eventos</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <h1>Registro de Evento</h1>
+
+  <form id="registroEvento">
+
+    <fieldset class="datosP">
+    <legend>Datos personales</legend>
+
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" placeholder="Ingresa un correo electrónico" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" placeholder="Ingresa un número de 10 digítos" required>
+    </fieldset>
+
+    <fieldset>
+    <legend>Preferencias</legend>
+
+    <label>Intereses:</label>
+    <label><input type="checkbox" name="intereses" value="tecnología"> Tecnología</label>
+    <label><input type="checkbox" name="intereses" value="negocios"> Negocios</label>
+    <label><input type="checkbox" name="intereses" value="arte"> Arte</label>
+
+    <label>Horario preferido:</label>
+    <label><input type="radio" name="horario" value="mañana" required> Mañana</label>
+    <label><input type="radio" name="horario" value="tarde"> Tarde</label>
+    <label><input type="radio" name="horario" value="noche"> Noche</label>
+    </fieldset>
+
+    <fieldset>
+    <legend>Datos de cita</legend>
+    <label for="fecha">Fecha del evento:</label>
+    <input type="date" id="fecha" name="fecha"  required>
+
+    <label for="hora">Hora preferida:</label>
+    <input type="time" id="hora" name="hora" required>
+
+    <label for="archivo">Documento de identificación (opcional):</label>
+    <input type="file" id="archivo" name="archivo">
+
+    </fieldset>
+   
+    <button type="submit" id="btn" disabled>Registrarse</button>
+    
+
+  </form>
+
+<script src="app.js"></script>
+</body>
+</html>

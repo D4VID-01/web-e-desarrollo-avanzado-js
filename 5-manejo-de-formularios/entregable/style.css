@@ -1,0 +1,59 @@
+
+body{
+    margin: 0;
+    height: 100vh;
+    background:
+        radial-gradient(circle at 30% 40%, rgba(0, 0, 0, 0.05), transparent 60%),
+        radial-gradient(circle at 70% 70%, rgba(0, 0, 0, 0.08), transparent 60%),
+        linear-gradient(135deg, #41547a, #aec0e0);
+   
+    color: #ffffff;
+}
+
+h1, legend{
+    text-align: center;
+    margin: 0;
+}
+
+fieldset{
+    overflow: hidden;
+}
+
+form {
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+label {
+    display: block;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+input::placeholder{
+    font-style: italic;
+    opacity: .5;
+    font-size: 11px;
+}
+
+.datosP > input{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+button{
+    padding: 5px;
+    width: 35%;
+    align-self: center;
+}
+
